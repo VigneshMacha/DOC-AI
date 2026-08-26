@@ -924,6 +924,3 @@ See the `LICENSE` file for details.
 
 ---
 
-<p align="center">
-  Built with ❤️ using FastAPI, Mistral AI, Supabase pgvector and modern web technologies.
-</p>
