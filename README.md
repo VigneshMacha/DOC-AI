@@ -599,26 +599,6 @@ Open:
 http://127.0.0.1:8000
 ```
 
----
-
-# 🐳 Docker
-
-Build:
-
-```bash
-docker build -t chanti-ai .
-```
-
-Run:
-
-```bash
-docker run \
-  --env-file .env \
-  -p 8000:8000 \
-  chanti-ai
-```
-
----
 
 # ☁️ Deploying to Render
 
@@ -814,41 +794,6 @@ These limitations can be addressed through future improvements such as:
 * Better OCR pipelines
 * Contextual chunking
 
----
-
-# 🗺️ Roadmap
-
-## Completed
-
-* [x] PDF ingestion
-* [x] OCR fallback
-* [x] Text chunking
-* [x] Mistral embeddings
-* [x] pgvector storage
-* [x] Semantic retrieval
-* [x] Grounded generation
-* [x] Page-level citations
-* [x] User authentication
-* [x] Responsive UI
-* [x] Document management
-* [x] Conversation management
-
-## Planned
-
-* [ ] Streaming LLM responses
-* [ ] Hybrid BM25 + vector search
-* [ ] Reranking
-* [ ] Query rewriting
-* [ ] Multi-document collections
-* [ ] Workspace/team support
-* [ ] Role-based permissions
-* [ ] Advanced document preview
-* [ ] Usage analytics
-* [ ] RAG evaluation dashboard
-* [ ] Background document processing
-* [ ] Redis caching
-* [ ] Rate limiting
-* [ ] Multimodal document understanding
 
 ---
 
