@@ -1,0 +1,17 @@
+# Python environment & cache
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables (Secrets)
+.env
+
+# Vector / Local DB
+chromadb/
+
+# OS / Editor files
+.DS_Store
+.vscode/
+.idea/
