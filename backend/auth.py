@@ -7,8 +7,7 @@ from backend.database import supabase
 
 ACCESS_COOKIE = "access_token"
 COOKIE_SECURE = os.getenv("COOKIE_SECURE", "false").lower() == "true"
-COOKIE_SAMESITE = os.getenv("COOKIE_SAMESITE", "lax")
-
+COOKIE_SAMESITE = os.getenv("COOKIE_SAMESITE", "lax")    
 AUTH_RETRIES = max(0, int(os.getenv("AUTH_RETRIES", "2")))
 AUTH_RETRY_DELAY = max(0.0, float(os.getenv("AUTH_RETRY_DELAY", "0.35")))
 

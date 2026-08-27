@@ -146,9 +146,7 @@ def create_vectorstore(chunks: List[Document]) -> SupabaseVectorStore:
     )
 
 
-# =========================================================
-# PRIMARY DOCUMENT PROCESSOR
-# =========================================================
+
 
 def process_documents(
     uploaded_files,
