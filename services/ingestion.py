@@ -121,9 +121,7 @@ def load_pdf(uploaded_file) -> List[Document]:
             pass
 
 
-# =========================================================
-# CHUNKING & SUPABASE VECTOR STORE
-# =========================================================
+
 
 def split_documents(documents: List[Document]) -> List[Document]:
     splitter = RecursiveCharacterTextSplitter(
