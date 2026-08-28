@@ -23,7 +23,6 @@ DOCUMENTS_TABLE = os.getenv("DOCUMENTS_TABLE", "documents")
 CONVERSATIONS_TABLE = os.getenv("CONVERSATIONS_TABLE", "conversations")
 MESSAGES_TABLE = os.getenv("MESSAGES_TABLE", "messages")
 
-
 def _rows(response: Any) -> List[Dict[str, Any]]:
     return list(getattr(response, "data", None) or [])
 
@@ -42,6 +41,7 @@ def save_document(
         "chunk_count": int(chunk_count or 0),
     }
     if document_key:
+        
         payload["document_key"] = str(document_key)
 
     response = supabase.table(DOCUMENTS_TABLE).insert(payload).execute()
